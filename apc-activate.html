@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Hướng dẫn kích hoạt APC Pro và APC Enterprise</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --muted: #9aa4b2;
+            --accent: #0ea5ff;
+            --glass: rgba(255,255,255,0.04);
+            --radius: 12px;
+            --max-width: 1100px;
+            --gap: 1rem;
+            --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html, body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-sans);
+            background: linear-gradient(180deg,#071024 0%, #071627 100%);
+            color: #e6eef6;
+            line-height: 1.6;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--gap);
+            padding: 0.5rem
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: inherit
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            display: inline-grid;
+            place-items: center;
+            background: linear-gradient(135deg,var(--accent),#7c3aed);
+            border-radius: 10px
+        }
+
+        nav {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center
+        }
+
+        .nav-links {
+            display: none;
+            gap: 0.5rem;
+        }
+
+        .cta {
+            background: var(--accent);
+            color: #042027;
+            border: none;
+            padding: 0.5rem 0.9rem;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer
+        }
+
+        .menu-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.06);
+            padding: 0.4rem;
+            border-radius: 8px;
+            display: inline-grid;
+            place-items: center;
+            cursor: pointer
+        }
+
+        main {
+            margin-top: 1rem
+        }
+
+        .card {
+            background: var(--card);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.02)
+        }
+
+        h1, h2 {
+            margin: 0 0 .5rem 0
+        }
+
+        p {
+            margin: .5rem 0;
+            color: var(--muted)
+        }
+
+        ul {
+            margin: .5rem 0 1rem 1.25rem;
+            color: var(--muted)
+        }
+
+        li {
+            margin-bottom: .5rem
+        }
+
+        footer {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: var(--radius);
+            background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+        }
+
+        @media (min-width:641px) {
+            .nav-links {
+                display: flex
+            }
+
+            .menu-btn {
+                display: none
+            }
+        }
+
+        a {
+            color: #0ea5ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+            a:hover {
+                color: #38bdf8;
+                text-decoration: underline;
+            }
+
+        .small {
+            font-size: 0.85rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius);
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="document">
+        <header aria-label="Main header">
+            <a href="index.html" class="brand" aria-label="APC homepage">
+                <div class="logo" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="14" height="14" rx="3" fill="white" opacity="0.12"></rect><path d="M6 9h8M6 12h6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+                <div>
+                    <h1>APC</h1>
+                    <div class="small muted">Tạo hồ sơ tự động &amp; nhanh chóng</div>
+                </div>
+            </a>
+            <nav aria-label="Primary navigation">
+                <button class="menu-btn" id="menuToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Mở menu">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" /></svg>
+                </button>
+                <div class="nav-links" id="primaryNav">
+                    <a href="index.html" class="small">Trang chủ</a>
+                    <a href="apc-compare.html" class="small">So sánh</a>
+                    <a href="#contact" class="small">Liên hệ</a>
+                    <button type="button" class="cta" onclick="location.href='index.html#pricing'">Gói & giá</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="card">
+                <h1>Hướng dẫn kích hoạt phần mềm APC</h1>
+
+                <h2>1. Hướng dẫn kích hoạt APC Pro</h2>
+                <img src="images/activePro1.png" alt="Hướng dẫn kích hoạt APC Pro" />
+                <ol>
+                    <li>Vào menu **Hệ thống** > **Kích hoạt APC**.</li>
+                    <li>Sao chép mã APC hiển thị và dán vào email, gửi tới địa chỉ **info.apcez@gmail.com**. Tiêu đề email ghi "Dùng thử APC Pro" hoặc "Mua key APC Pro" tùy theo nhu cầu của bạn.</li>
+                    <li>Nếu bạn chọn dùng thử, hệ thống sẽ gửi lại key để bạn kích hoạt.</li>
+                    <li>Nếu bạn mua bản quyền, bạn sẽ nhận được email tự động phản hồi về số tiền và số tài khoản. Sau khi chuyển khoản, bạn sẽ nhận được một email mới chứa key sử dụng.</li>
+                    <li>Sao chép key nhận được, dán vào ô **Key kích hoạt** và bấm **Kích hoạt**.</li>
+                </ol>
+
+                <br />
+
+                <h2>2. Hướng dẫn kích hoạt APC Enter</h2>
+                <img src="images/activeEnter1.png" alt="Hướng dẫn kích hoạt APC Enterprise" />
+                <ol>
+                    <li>Tại APC Server, bạn bấm vào menu **Kích hoạt**.</li>
+                    <li>Sao chép mã APC và gửi email đến **info.apcez@gmail.com**. Tiêu đề email ghi "Dùng thử APC enter... user" hoặc "Mua key APC enter... user" và ghi rõ số lượng người dùng bạn muốn.</li>
+                    <li>Nếu bạn dùng thử, hệ thống sẽ gửi key để bạn kích hoạt.</li>
+                    <li>Nếu bạn mua bản quyền, bạn sẽ nhận email phản hồi tự động với thông tin chuyển khoản. Sau khi chuyển khoản, bạn sẽ nhận được email mới chứa key sử dụng.</li>
+                    <li>Sao chép key nhận được, dán vào ô **Key kích hoạt** và bấm **Kích hoạt**.</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer id="contact" class="footer">
+            <h2>Thông tin liên hệ</h2>
+            <p class="small muted">
+                Trang Fanpage:
+                <a href="https://www.facebook.com/apcsoft/" target="_blank" rel="noopener noreferrer">Truy cập</a><br />
+                Nhóm facebook hỗ trợ người dùng cập nhật mẫu biểu (Agribank):
+                <a href="https://www.facebook.com/share/g/15NmCar6Nq/?mibextid=wwXIfr" target="_blank" rel="noreferrer">Truy cập</a><br />
+                Kênh Youtube:
+                <a href="https://youtube.com/@apcsoft?si=FcOPn54RN51kK1ez" target="_blank" rel="noreferrer">Truy cập</a><br />
+            </p>
+            <div style="margin-top:0.75rem" class="small muted">© <span id="yr"></span> APC. All rights reserved by Hoàng Thạch APC Soft.</div>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+        const btn = document.getElementById('menuToggle');
+        const nav = document.getElementById('primaryNav');
+        if (btn) {
+            btn.addEventListener('click', () => {
+                const open = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!open));
+                nav.style.display = open ? 'none' : 'flex';
+            });
+        }
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 641) { nav.style.display = 'flex'; if (btn) btn.setAttribute('aria-expanded', 'false'); }
+            else { nav.style.display = 'none'; }
+        });
+    </script>
+</body>
+</html>
