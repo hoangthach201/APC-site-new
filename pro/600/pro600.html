@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="utf-8" />
-    <title>APC Enter 3220</title>
+    <title>APC Pro 600</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <style>
         :root {
@@ -109,7 +109,6 @@
             border-radius: 10px;
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.02)
         }
-
         h1{font-size:1rem;margin:0}
         h2{margin:0;font-size:1.6rem;letter-spacing:-0.01em;}
 
@@ -172,7 +171,10 @@
         <header aria-label="Main header">
             <a href="../../index.html" class="brand" aria-label="APC homepage">
                 <div class="logo" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="14" height="14" rx="3" fill="white" opacity="0.12"></rect><path d="M6 9h8M6 12h6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect x="3" y="4" width="14" height="14" rx="3" fill="white" opacity="0.12"></rect>
+                        <path d="M6 9h8M6 12h6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
                 </div>
                 <div>
                     <h1>APC</h1>
@@ -194,33 +196,23 @@
 
         <main>
             <section class="card">
-                <h1>APC Enter 3.2.2.0</h1>
+                <h1>APC Pro 6.0.0</h1>
                 <p>
                     Về trang chủ để tải bản mới nhất:
                     <!--<button type="button" class="cta" onclick="location.href='../../index.html#changelogPro'">Tải về</button>-->
-                    <a href='../../index.html#changelogEnter' class="small">Bấm vào đây</a>
+                    <a href='../../index.html#changelogPro' class="small">Bấm vào đây</a>
                 </p>
-                <h3>Nhật ký thay đổi - Changelog Update_Enter 3.2.2.0</h3>
+                <h3>Nhật ký thay đổi - Changelog Update_Pro_6.0.0</h3>
 
-                - Thêm hàm tạo mã QR để chèn vào hồ sơ =qrcode(Gia_tri)<br />
-                - Thêm hàm đọc số bằng tiếng Anh = docsoen(Gia_tri)<br />
-                - Sửa lỗi khi gặp thông báo “Thời gian hệ thống bị thay đổi”: thường xuyên báo hết hạn nhập mã phản hồi<br />
-                - Khách hàng\Dữ liệu khách hàng\Chuyển KH sang user khác: sửa lại sắp xếp hiển thị danh sách user xổ xuống theo vần ABC<br />
-                - Thông tin\Thông tin chung\Nhập Excel: sửa lỗi đôi lúc nhập file excel xong thoát mở lại chương trình APC thì báo lỗi “Database is locked”<br />
-                - Tiện ích: Thêm màn hình “Tạo mã QR” để tạo mã QR từ thông tin do người dùng nhập vào<br />
-                - Tiện ích\Tính lãi: Thêm chức năng tự động phân cách phần nghìn khi nhập vào số tiền<br />
-                - Tiện ích\Tính lãi: Bổ sung thêm tùy chọn "Tính lãi cả ngày đầu và ngày cuối"<br />
-                - Cấu hình\Hồ sơ, form Sửa: Sửa lỗi khi thay đổi Module nhưng danh sách nhóm hồ sơ xổ xuống tương ứng không thay đổi theo<br />
-                - Cấu hình\Sửa thuộc tính file mẫu: Cho phép tìm kiếm và thay thế đối với file docm<br />
-                - Form hồ sơ\Danh sách: chỉnh lại khi bấm X (đóng form danh sách) thì tương đương với bấm "Xong"<br />
-                - Clipboard: Lỗi khi dữ liệu có dấu chấm thập phân ví dụ ".000" ở clipboard khi nhập vào APC bị hiểu thành phân cách phần nghìn<br />
-                - Form hồ sơ\nút Scan QR\nút Chọn ảnh hoặc file pdf: sửa lỗi không đọc được mã QR trong một số ảnh chụp<br />
-                - Form hồ sơ\Scan QR\nút "Chọn ảnh hoặc file pdf": Chỉnh lại sau khi đọc ra kết quả thì tự động load vào combobox đầu tiên<br />
-                - Form hồ sơ\nút "Nhập file bk" và Khách hàng\Nhập file dữ liệu khách hàng: nhập file bk: sửa lỗi tên tab trong danh sách bị reset về mặc định<br />
-                - Sửa lỗi một số lỗi liên quan đến thiết lập định dạng vùng, định dạng<br />
+                - Module Khách hàng: Thêm form mới "Sửa dữ liệu khách hàng theo lô" giúp sửa dữ liệu khách hàng hàng loạt;<br />
+                - Hệ thống\Tùy chọn khác: Thêm tùy chọn cho phép import form hồ sơ, nhóm hồ sơ (cập nhật mẫu biểu) mà vẫn giữ được thiết lập nút bấm liên kết đến file trong Mẫu biểu chung;<br />
+                - Hệ thống\Tùy chọn khác: Thêm tùy chọn cho phép export form hồ sơ, nhóm hồ sơ bao gồm cả file trong Mẫu biểu chung;<br />
+                - Cấu hình\Mẫu biểu chung\bấm chuột phải vào "Tất cả thư mục" chọn menu "tải thư mục xuống": sửa lỗi chỉ tải file về chứ chưa phân theo từng thư mục;<br />
+                - Cấu hình\Cập nhật mẫu biểu: sửa lại phần hướng dẫn tương ứng với cấu hình tùy chọn chọn import;<br />
+                - Cấu hình: Đổi tên menu "Sửa nhanh mẫu biểu gốc" thành "Sửa mẫu biểu gốc theo tên".<br />
 
-                <img src="590a.png" alt="QR code hồ sơ 1" />
-                <img src="590b.png" alt="QR code hồ sơ 2" />
+                <img src="600a.png" alt="Hình ảnh minh họa chức năng 1" />
+                <img src="600b.png" alt="Hình ảnh minh họa chức năng 2" />
 
             </section>
         </main>
