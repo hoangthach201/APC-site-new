@@ -110,18 +110,17 @@
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.02)
         }
 
-        h1, h2 {
-            margin: 0 0 .5rem 0
-        }
+        h1{font-size:1rem;margin:0}
+        h2{margin:0;font-size:1.6rem;letter-spacing:-0.01em;}
 
         p {
             margin: .5rem 0;
-            color: var(--muted)
+            /*color: var(--muted)*/
         }
 
         ul {
             margin: .5rem 0 1rem 1.25rem;
-            color: var(--muted)
+            
         }
 
         li {
@@ -157,7 +156,10 @@
         .small {
             font-size: 0.85rem; /* Bằng với index.html */
         }
-
+        .muted {
+            color: var(--muted)
+        }
+        
 
     </style>
 </head>
@@ -189,17 +191,17 @@
 
         <main>
             <section class="card">
-                <h1>So sánh APC Pro và APC Enterprise</h1>
-                <p><strong>Hiện tại, có 2 bản APC là APC Enterprise và APC Pro.</strong></p>
+                <h2>So sánh APC Pro và APC Enterprise</h2>
+                <strong>Hiện tại, có 2 bản APC là APC Enterprise và APC Pro.</strong>
 
-                <h2>Sự khác nhau giữa 2 bản này:</h2>
+                <h3>Sự khác nhau giữa 2 bản này:</h3>
                 <ul>
                     <li><strong>APC Pro</strong> hoạt động riêng lẻ trong máy tính của người dùng. Mỗi bản APC Pro trong máy tính chứa dữ liệu riêng, độc lập.</li>
                     <li><strong>APC Enterprise</strong> phải kết nối đến máy chủ và sử dụng dữ liệu tập trung. Khách hàng, mẫu biểu nằm ở máy chủ của chi nhánh chứ không ở máy tính của người dùng. Người dùng có thể truy cập dữ liệu khách hàng đã được tạo trong toàn chi nhánh.</li>
                     <li>Về cách sử dụng để lập hồ sơ, chỉnh sửa mẫu biểu: <strong>2 bản đều tương đồng</strong> như nhau.</li>
                 </ul>
 
-                <h2>Ưu nhược điểm của từng bản:</h2>
+                <h3>Ưu nhược điểm của từng bản:</h3>
                 <h3>APC Pro</h3>
                 <ul>
                     <li>Thích hợp cho nhu cầu sử dụng cá nhân, tự tuỳ chỉnh, không phụ thuộc vào máy chủ, đơn giản và không cần cài đặt.</li>
@@ -214,14 +216,14 @@
                     <li>APC Enterprise thuận tiện hơn trong việc truy xuất thông tin khách hàng và có thêm tính năng nhắn tin nội bộ giữa các người dùng.</li>
                 </ul>
 
-                <h2>Tổng kết</h2>
+                <h3>Tổng kết</h3>
                 <p>
                     Về các tính năng thì APC Pro và APC Enterprise khá tương đồng; việc chọn bản nào phụ thuộc vào nhu cầu: <br />
                     - Nếu cần dùng độc lập, đơn giản, ít quản trị → chọn <strong>APC Pro</strong>;<br />
                     - Nếu cần chia sẻ dữ liệu, thống nhất mẫu biểu và truy xuất tập trung → chọn <strong>APC Enterprise</strong>.
                 </p>
 
-                <p class="small muted">Bạn có thể quay lại <a href="index.html">Trang chủ</a>.</p>
+                <a href="index.html">Quay lại Trang chủ</a>
             </section>
 
             <footer id="contact" class="footer">
