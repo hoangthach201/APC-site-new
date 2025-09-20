@@ -98,9 +98,15 @@
     .changelog-content ul{padding-left:1rem;}
     .changelog-content li{margin-bottom:0.25rem;font-size:0.9rem;}
 
-    footer{
+    .footer{
       margin-top:1rem;padding:1rem;border-radius:var(--radius);
       background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+    }
+    .help {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: var(--radius);
+        background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
     }
     .muted{color:var(--muted)}.small{font-size:0.85rem;}
     .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;}
@@ -156,7 +162,7 @@
         </button>
         <div class="nav-links" id="primaryNav">
             <a href="#features" class="small">Tính năng</a>
-            <!-- ><a href="#pricing" class="small">Giá</a>     -->
+            <!-- <a href="#pricing" class="small">Giá</a>     -->
             <a href="#testimonials" class="small">Đánh giá</a>
 
             <button type="button" class="cta" onclick="location.href='#pricing'">Gói & giá</button>
@@ -173,7 +179,7 @@
                     <div class="eyebrow">Phần mềm hỗ trợ tạo hồ sơ, mẫu biểu</div>
                     <h2 id="hero-heading">Tạo hồ sơ, mẫu biểu tự động nhanh chóng, dễ dàng</h2>
                     <p class="lead">APC giúp bạn tạo, quản lý hồ sơ, mẫu biểu, dễ dàng chỉnh sửa, bảo mật và an toàn.</p>
-                    
+
                     <div class="hero-ctas">
                         <button type="button" class="cta" onclick="location.href='#changelogPro'">Tải về miễn phí</button>
                         <button type="button" class="menu-btn" onclick="location.href='#features'">Tìm hiểu thêm</button>
@@ -225,46 +231,58 @@
             </div>
         </section>
 
-        <!-- APC Pro -->
-        <div class="card changelog" id="changelogPro">
-            <h3>APC Pro</h3>
-            <p>
-                Phiên bản phù hợp cho sử dụng cá nhân                
-            </p>
-            <p class="small muted">
+        
+            <!-- APC Pro -->
+            <div class="card changelog" id="changelogPro">
+                <h3>APC Pro</h3>
+                <p>
+                    Phiên bản phù hợp cho sử dụng cá nhân
+                </p>
+                <p class="small muted">
 
-                a. Bản đầy đủ (APC Pro full 600) có mẫu biểu: &nbsp
-                <a href="https://u.pcloud.link/publink/show?code=kZwDiz5ZJmeq47M9v28cHurgqFhnYHzG3K6y" target="_blank" rel="noopener noreferrer">Tải về</a> <br />
+                    a. Bản đầy đủ (APC Pro full 600) có mẫu biểu: &nbsp
+                    <a href="https://u.pcloud.link/publink/show?code=kZwDiz5ZJmeq47M9v28cHurgqFhnYHzG3K6y" target="_blank" rel="noopener noreferrer">Tải về</a> <br />
 
-                b. File cập nhật Update_Pro_600: &nbsp
-                <a href="https://u.pcloud.link/publink/show?code=kZNBiz5Zne2AjOm1gN5N1PK67QEz50SUd5K7" target="_blank" rel="noopener noreferrer">Tải về</a> &nbsp
-                <a href="pro/600/pro600.html" class="small"> Chi tiết thay đổi</a><br />
+                    b. File cập nhật Update_Pro_600: &nbsp
+                    <a href="https://u.pcloud.link/publink/show?code=kZNBiz5Zne2AjOm1gN5N1PK67QEz50SUd5K7" target="_blank" rel="noopener noreferrer">Tải về</a> &nbsp
+                    <a href="pro/600/pro600.html" class="small"> Chi tiết thay đổi</a><br />
 
-                Chỉ cần tải một trong hai file trên tùy thuộc vào một trong hai trường hợp sau:<br />
-                - Nếu bạn CHƯA có bản APC Pro full (có mẫu biểu) thì hãy tải bản đầy đủ (mục a) về. <br />
-                - Nếu bạn đã CÓ bản APC Pro full (có mẫu biểu) rồi thì chỉ cần tải file cập nhật (mục b) về và cập nhật phiên bản theo hướng dẫn ở file kèm theo.<br />
-                <em>(Cập nhật phiên bản không làm thay đổi mẫu biểu đã có, và luôn bao gồm, tích lũy các chỉnh sửa, bổ sung tính năng từ các bản cập nhật trước đó)</em>
-            </p>
+                    Chỉ cần tải một trong hai file trên tùy thuộc vào một trong hai trường hợp sau:<br />
+                    - Nếu bạn CHƯA có bản APC Pro full (có mẫu biểu) thì hãy tải bản đầy đủ (mục a) về. <br />
+                    - Nếu bạn đã CÓ bản APC Pro full (có mẫu biểu) rồi thì chỉ cần tải file cập nhật (mục b) về và cập nhật phiên bản theo hướng dẫn ở file kèm theo.<br />
+                    <em>(Cập nhật phiên bản không làm thay đổi mẫu biểu đã có, và luôn bao gồm, tích lũy các chỉnh sửa, bổ sung tính năng từ các bản cập nhật trước đó)</em>
+                </p>
 
-        </div>
-        <!-- APC Enter  -->
-        <div class="card changelog" id="changelogEnter">
-            <h3>APC Enterprise</h3>
-            <p>
-                Phiên bản phù hợp cho sử dụng doanh nghiệp &nbsp 
-                <a href="apc-compare.html" class="small"> So sánh APC Pro và APC Enter </a>
-            </p>
-            <p class="small muted">
-                a. Bộ cài đặt APC Enterprise: &nbsp
-                <a href="https://drive.google.com/drive/folders/1-SIfv68O7ZQCJB97AotUmo95YbXCWj75?usp=drive_link" target="_blank" rel="noopener noreferrer">Tải về</a><br />
-                b. File cập nhật phiên bản Update_Enter_3.2.2.0: &nbsp
-                <a href="https://u.pcloud.link/publink/show?code=kZ54Om5Zle2bNT0FG2R2SEO8CrQ0IVLjlCx7" target="_blank" rel="noopener noreferrer">Tải về</a> &nbsp
-                <a href="enter/3220/enter3220.html" class="small"> Chi tiết thay đổi</a><br />
-                <em>(Cập nhật phiên bản không làm thay đổi mẫu biểu đã có, và luôn bao gồm, tích lũy các chỉnh sửa, bổ sung tính năng từ các bản cập nhật trước đó)</em>
+            </div>
+            <!-- APC Enter  -->
+            <div class="card changelog" id="changelogEnter">
+                <h3>APC Enterprise</h3>
+                <p>
+                    Phiên bản phù hợp cho sử dụng doanh nghiệp &nbsp
+                    <a href="apc-compare.html" class="small"> So sánh APC Pro và APC Enter </a>
+                </p>
+                <p class="small muted">
+                    a. Bộ cài đặt APC Enterprise: &nbsp
+                    <a href="https://drive.google.com/drive/folders/1-SIfv68O7ZQCJB97AotUmo95YbXCWj75?usp=drive_link" target="_blank" rel="noopener noreferrer">Tải về</a><br />
+                    b. File cập nhật phiên bản Update_Enter_3.2.2.0: &nbsp
+                    <a href="https://u.pcloud.link/publink/show?code=kZ54Om5Zle2bNT0FG2R2SEO8CrQ0IVLjlCx7" target="_blank" rel="noopener noreferrer">Tải về</a> &nbsp
+                    <a href="enter/3220/enter3220.html" class="small"> Chi tiết thay đổi</a><br />
+                    <em>(Cập nhật phiên bản không làm thay đổi mẫu biểu đã có, và luôn bao gồm, tích lũy các chỉnh sửa, bổ sung tính năng từ các bản cập nhật trước đó)</em>
 
-            </p>
-        </div>
-    
+                </p>
+            </div>
+        
+        <!-- Trợ giúp -->
+            <section id="help" class="help">
+                <h2>Trợ giúp</h2>
+                <p>
+                    Hướng dẫn cập nhật mẫu biểu APC: &nbsp
+                    <a href="cnmb.html" class="small"> Truy cập </a>
+                </p>
+            </section>
+            
+
+
         <!-- Footer -->
         <footer id="contact" class="footer">
             <h2>Thông tin liên hệ</h2>
@@ -275,7 +293,7 @@
                 <a href="https://www.facebook.com/share/g/15NmCar6Nq/?mibextid=wwXIfr" target="_blank" rel="noreferrer">Truy cập</a><br />
                 Kênh Youtube:
                 <a href="https://youtube.com/@apcsoft?si=FcOPn54RN51kK1ez" target="_blank" rel="noreferrer">Truy cập</a><br />
-            </p>            
+            </p>
             <div style="margin-top:0.75rem" class="small muted">© <span id="yr"></span> APC. All rights reserved by Hoàng Thạch APC Soft.</div>
         </footer>
     </main>
