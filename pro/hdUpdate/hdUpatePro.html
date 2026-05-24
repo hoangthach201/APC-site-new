@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="utf-8" />
-    <title>Hướng dẫn sửa lỗi và các hỗ trợ khác</title>
+    <title>Hướng dẫn cập nhật phiên bản mới cho APC Pro</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <style>
         :root {
@@ -109,7 +109,6 @@
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
         }
 
-        /* Sửa thứ bậc heading */
         .brand h2 {
             font-size: 1rem;
             margin: 0;
@@ -122,10 +121,10 @@
             margin: 0 0 1.25rem 0;
         }
 
-        .section-title {
+        .step-title {
             font-size: 1rem;
             font-weight: 600;
-            color: #e6eef6;
+            color: var(--accent);
             margin: 1.25rem 0 0.5rem 0;
         }
 
@@ -134,19 +133,21 @@
             color: #e6eef6;
         }
 
-        /* Sửa: thêm class .muted còn thiếu */
-        .muted {
-            color: var(--muted);
-        }
-
         ul {
-            margin: 0.25rem 0 1rem 1.25rem;
-            color: #e6eef6;
-            padding-left: 1rem;
+            margin: 0.5rem 0 1rem 1.25rem;
+            color: var(--muted);
         }
 
         li {
             margin-bottom: 0.5rem;
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        .small {
+            font-size: 0.85rem;
         }
 
         footer {
@@ -183,10 +184,6 @@
             text-decoration: underline;
         }
 
-        .small {
-            font-size: 0.85rem;
-        }
-
         img {
             max-width: 100%;
             height: auto;
@@ -198,7 +195,7 @@
 <body>
     <div class="container" role="document">
         <header aria-label="Main header">
-            <a href="../index.html" class="brand" aria-label="APC homepage">
+            <a href="../../index.html" class="brand" aria-label="APC homepage">
                 <div class="logo" aria-hidden="true">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <rect x="3" y="4" width="14" height="14" rx="3" fill="white" opacity="0.12"></rect>
@@ -206,7 +203,6 @@
                     </svg>
                 </div>
                 <div>
-                    <!-- Sửa: dùng h2 cho brand -->
                     <h2>APC</h2>
                     <div class="small muted">Tạo hồ sơ tự động &amp; nhanh chóng</div>
                 </div>
@@ -218,7 +214,8 @@
                     </svg>
                 </button>
                 <div class="nav-links" id="primaryNav">
-                    <a href="../index.html" class="small">Trang chủ</a>
+                    <a href="../../index.html" class="small">Trang chủ</a>
+                    <a href="../../support/support-index.html" class="small">Mục lục hướng dẫn</a>
                     <a href="#contact" class="small">Liên hệ</a>
                 </div>
             </nav>
@@ -226,42 +223,47 @@
 
         <main>
             <section class="card">
-                <!-- Sửa: h1 cho tiêu đề chính -->
-                <h1 class="card-title">Hướng dẫn sửa lỗi và các hỗ trợ khác</h1>
+                <h1 class="card-title">Hướng dẫn cập nhật phiên bản mới cho APC Pro</h1>
+                <p>Áp dụng cho APC Pro đang từ phiên bản 3.5.5 trở lên</p>
+                <p>
+                    Xem phiên bản APC hiện tại của bạn ở góc trái bên dưới gần chỗ hiển thị ngày sử dụng còn lại:<br />
+                    <!-- Sửa: <i> → <em> cho đúng ngữ nghĩa HTML5 -->
+                    <em>(Như ảnh minh họa dưới đây là APC Pro phiên bản 5.9.0)</em>
+                </p>
+                <img src="phienBan.png" alt="Phiên bản APC" />
 
-                <!-- Sửa: h3 cho tiêu đề các mục, dùng <ul><li> thay vì dấu "-" + <br /> -->
-                <h3 class="section-title">* Hỗ trợ về APC Pro</h3>
-                <ul>
-                    <li>
-                        Hướng dẫn cập nhật phiên bản APC Pro:
-                        <a href="../pro/hdUpdate/hdUpatePro.html" class="small">Truy cập</a>
-                    </li>
+                <h3 class="step-title">Bước 1: Tải file cập nhật phiên bản về máy</h3>
+                <p>Bạn có thể tải file cập nhật phiên bản mới nhất tại đây:
+                <a href="https://u.pcloud.link/publink/show?code=kZNBiz5Zne2AjOm1gN5N1PK67QEz50SUd5K7" target="_blank" rel="noopener noreferrer">Tải về</a>
+                </p>
 
-                    <li>
-                        Hướng dẫn sửa lỗi block thư viện dll:
-                        <a href="blockDll/blockDll.html" class="small">Truy cập</a>
-                    </li>
-                    <li>
-                        Hướng dẫn copy APC từ máy tính này sang máy tính khác:
-                        <a href="../pro/copyAPC/copyAPC.html" class="small">Truy cập</a>
-                    </li>
-                </ul>
+                <p>
+                    File cập nhật phiên bản là file nén có tên <strong>Update_Pro_x.y.z.zip</strong>
+                    (x.y.z là ký hiệu phiên bản, ví dụ: Update_Pro_6.0.0.zip)<br />
+                    <strong>KHÔNG</strong> giải nén file này!<br />
+                    File này cần để ở ổ D hoặc E... trong máy (KHÔNG được để ở ổ C hoặc ổ mạng sẽ dễ bị lỗi, nếu máy chỉ có ổ C thì có thể để ở Desktop).
+                </p>
+                <!-- <img> ra ngoài <p> -->
+                <img src="fileUpdate.png" alt="File cập nhật phiên bản mới" />
 
-                <h3 class="section-title">* Hỗ trợ về APC Enter</h3>
-                <ul>
-                    <li>
-                        Hướng dẫn sửa lỗi block thư viện dll:
-                        <a href="blockDll/blockDll.html" class="small">Truy cập</a>
-                    </li>
-                </ul>
+                <h3 class="step-title">Bước 2: Thực hiện cập nhật phiên bản</h3>
+                <p>Vào menu <strong>Hệ thống \ Cập nhật phiên bản mới</strong>:</p>
+                <img src="1.png" alt="Chọn menu Cập nhật phiên bản mới" />
 
-                <h3 class="section-title">* Hỗ trợ chung</h3>
-                <ul>
-                    <li>
-                        Hướng dẫn xuất, nhập nhóm hồ sơ từ bản APC này sang bản APC khác:
-                        <a href="xuatNhapForm/xuatNhapForm.html" class="small">Truy cập</a>
-                    </li>
-                </ul>
+                <p>Bấm "Chọn file" rồi chọn đến file Update_Pro_xyz đã tải, sau đó bấm <strong>Open</strong>:</p>
+                <!-- Sửa: <img> ra ngoài <p> -->
+                <img src="2.png" alt="Cập nhật phiên bản" />
+
+                <p>Bấm <strong>Cập nhật</strong> để tiến hành:</p>
+                <img src="3.png" alt="Thực hiện" />
+
+                <p>
+                    Chờ vài phút để chương trình tự động cập nhật, trong quá trình này <strong>KHÔNG</strong> tắt chương trình hoặc tắt máy tính!<br />
+                    Bấm OK chương trình sẽ tự mở lại:
+                </p>
+                <img src="4.png" alt="Cập nhật mẫu biểu" />
+
+                <p>Xong có thể sử dụng bình thường!</p>
             </section>
         </main>
 
@@ -285,7 +287,6 @@
         const btn = document.getElementById('menuToggle');
         const nav = document.getElementById('primaryNav');
 
-        // Sửa: thêm syncNav() để khởi tạo trạng thái đúng khi load trang
         function syncNav() {
             if (window.innerWidth >= 641) {
                 nav.style.display = 'flex';

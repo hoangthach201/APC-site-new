@@ -15,7 +15,7 @@
 
   <!-- Styles -->
   <style>
-    :root{
+    :root {
       --bg: #0f1724;
       --card: #0b1220;
       --muted: #9aa4b2;
@@ -27,114 +27,119 @@
       --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
 
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:var(--font-sans);
-      background:linear-gradient(180deg,#071024 0%, #071627 100%);
-      color:#e6eef6;
-      line-height:1.45;
-      padding:1rem;
-      display:flex;
-      justify-content:center;
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background: linear-gradient(180deg, #071024 0%, #071627 100%);
+      color: #e6eef6;
+      line-height: 1.45;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
     }
 
-    .container{width:100%;max-width:var(--max-width);}
-    .mt-1{margin-top:1rem;}
+    .container { width: 100%; max-width: var(--max-width); }
+    .mt-1 { margin-top: 1rem; }
 
-    header{
-      display:flex;align-items:center;justify-content:space-between;
-      gap:var(--gap);padding:0.5rem;
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: var(--gap); padding: 0.5rem;
     }
-    .brand{display:flex;align-items:center;gap:0.75rem;text-decoration:none;color:inherit;}
-    .logo{
-      width:40px;height:40px;display:inline-grid;place-items:center;
-      background:linear-gradient(135deg,var(--accent),#7c3aed);
-      border-radius:10px;box-shadow:0 4px 12px rgba(14,165,255,0.12);
+    .brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: inherit; }
+    .logo {
+      width: 40px; height: 40px; display: inline-grid; place-items: center;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      border-radius: 10px; box-shadow: 0 4px 12px rgba(14,165,255,0.12);
     }
-    .brand h1{font-size:1rem;margin:0}
-    nav{display:flex;gap:1rem;align-items:center;}
-    .nav-links{display:none;gap:1rem;}
-    .cta{background:var(--accent);color:#042027;border:none;padding:0.5rem 0.9rem;border-radius:10px;font-weight:600;cursor:pointer;}
-    .menu-btn{
-      background:transparent;border:1px solid rgba(255,255,255,0.06);
-      padding:0.4rem;border-radius:8px;display:inline-grid;place-items:center;cursor:pointer;
+    .brand h1 { font-size: 1rem; margin: 0; }
+    nav { display: flex; gap: 1rem; align-items: center; }
+    .nav-links { display: none; gap: 1rem; }
+    .cta { background: var(--accent); color: #042027; border: none; padding: 0.5rem 0.9rem; border-radius: 10px; font-weight: 600; cursor: pointer; }
+    .menu-btn {
+      background: transparent; border: 1px solid rgba(255,255,255,0.06);
+      padding: 0.4rem; border-radius: 8px; display: inline-grid; place-items: center; cursor: pointer;
     }
 
-    .hero{
-      display:flex;flex-direction:column;gap:1rem;margin-top:1rem;
-      padding:1.25rem;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-      border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.5);
+    .hero {
+      display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;
+      padding: 1.25rem; background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-radius: var(--radius); box-shadow: 0 6px 30px rgba(2,6,23,0.5);
     }
-    .hero-inner{display:flex;flex-direction:column;gap:1rem;}
-    .eyebrow{color:var(--accent);font-weight:700;font-size:0.85rem}
-    h2{margin:0;font-size:1.6rem;letter-spacing:-0.01em;}
-    p.lead{color:var(--muted);margin:0;max-width:55ch}
-    .hero-ctas{display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:0.5rem;}
+    .hero-inner { display: flex; flex-direction: column; gap: 1rem; }
+    .eyebrow { color: var(--accent); font-weight: 700; font-size: 0.85rem; }
+    h2 { margin: 0; font-size: 1.6rem; letter-spacing: -0.01em; }
+    p.lead { color: var(--muted); margin: 0; max-width: 55ch; }
+    .hero-ctas { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem; }
 
-    .features{display:grid;gap:0.75rem;margin-top:1rem;}
-    .card{
-      background:var(--card);padding:1rem;border-radius:10px;
-      box-shadow:inset 0 1px 0 rgba(255,255,255,0.02);
+    .features { display: grid; gap: 0.75rem; margin-top: 1rem; }
+    .card {
+      background: var(--card); padding: 1rem; border-radius: 10px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
     }
-    .card h3{margin:0 0 0.5rem 0}
-    .feature-grid{display:grid;grid-template-columns:1fr;gap:0.75rem;}
+    .card h3 { margin: 0 0 0.5rem 0; }
 
-    .meta-row{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem;}
-    .testimonial{display:flex;gap:1rem;align-items:flex-start;}
-    .icon-wrapper{flex:0 0 48px;border-radius:8px;background:var(--glass);display:grid;place-items:center;}
-    .quote{font-style:italic;color:var(--muted);margin:0;}
+    /* Sửa: màu chữ <p> trong card đổi sang trắng */
+    .card p { color: #e6eef6; }
 
-    .pricing-container{flex:1 1 250px;}
-    .pricing-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem;}
-    .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;}
-    .plan{background:var(--glass);border-radius:12px;padding:1rem;text-align:center;}
-    .plan.highlight{border:2px solid var(--accent);}
-    .price{font-size:1.25rem;font-weight:bold;margin:.5rem 0;}
+    .feature-grid { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
 
-    .changelog{flex:1 1 250px;display:flex;flex-direction:column;}
-    .changelog-content{margin-top:0.5rem;max-height:250px;overflow-y:auto;padding-right:0.5rem;}
-    .changelog-content ul{padding-left:1rem;}
-    .changelog-content li{margin-bottom:0.25rem;font-size:0.9rem;}
+    .meta-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+    .testimonial { display: flex; gap: 1rem; align-items: flex-start; }
+    .icon-wrapper { flex: 0 0 48px; border-radius: 8px; background: var(--glass); display: grid; place-items: center; }
+    .quote { font-style: italic; color: var(--muted); margin: 0; }
 
-    .footer{
-      margin-top:1rem;padding:1rem;border-radius:var(--radius);
-      background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+    .pricing-container { flex: 1 1 250px; }
+    .pricing-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: .5rem; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+    .plan { background: var(--glass); border-radius: 12px; padding: 1rem; text-align: center; }
+    .plan.highlight { border: 2px solid var(--accent); }
+    .price { font-size: 1.25rem; font-weight: bold; margin: .5rem 0; }
+
+    /* Sửa: đổi tên class từ .changelog sang .download-section cho rõ nghĩa */
+    .download-section { flex: 1 1 250px; display: flex; flex-direction: column; }
+
+    .muted { color: var(--muted); }
+    .small { font-size: 0.85rem; }
+    .sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+    .footer {
+      margin-top: 1rem; padding: 1rem; border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
     }
     .help {
-        margin-top: 1rem;
-        padding: 1rem;
-        border-radius: var(--radius);
-        background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+      margin-top: 1rem; padding: 1rem; border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
     }
-    .muted{color:var(--muted)}.small{font-size:0.85rem;}
-    .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;}
-    @media (min-width:641px){
-      .nav-links{display:flex;gap:1rem;align-items:center;}
-      .menu-btn{display:none;}
-      .hero-inner{flex-direction:row;justify-content:space-between;align-items:flex-start;}
-      .hero-left{flex:1;margin-right:1rem;}
-      .hero-right{flex:0 0 360px;}
-      .feature-grid{grid-template-columns:repeat(3,1fr);}
+
+    @media (min-width: 641px) {
+      .nav-links { display: flex; gap: 1rem; align-items: center; }
+      .menu-btn { display: none; }
+      .hero-inner { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+      .hero-left { flex: 1; margin-right: 1rem; }
+      .hero-right { flex: 0 0 360px; }
+      .feature-grid { grid-template-columns: repeat(3, 1fr); }
     }
-    @media (min-width:1025px){h2{font-size:2rem}body{padding:2rem}}
-	
-	.testimonial-narrow {
-	  max-width: 400px; /* Bạn chỉnh 280px, 320px,... tùy thích */
-	  flex: 0 0 auto;   /* Để nó không giãn hết hàng */
-	}
+    @media (min-width: 1025px) {
+      h2 { font-size: 2rem; }
+      body { padding: 2rem; }
+    }
+
+    .testimonial-narrow {
+      max-width: 400px;
+      flex: 0 0 auto;
+    }
+
     a {
-        color: #0ea5ff; /* Màu xanh sáng */
-        text-decoration: none; /* Bỏ gạch chân mặc định */
-        font-weight: 500; /* Tăng độ đậm */
+      color: #0ea5ff;
+      text-decoration: none;
+      font-weight: 500;
     }
-
     a:hover {
-        color: #38bdf8; /* Màu sáng hơn khi hover */
-        text-decoration: underline; /* Gạch chân khi hover */
+      color: #38bdf8;
+      text-decoration: underline;
     }
-
   </style>
 </head>
 <body>
@@ -161,158 +166,162 @@
           </svg>
         </button>
         <div class="nav-links" id="primaryNav">
-            <a href="#features" class="small">Tính năng</a>
-            <!-- <a href="#pricing" class="small">Giá</a>     -->
-            <a href="#testimonials" class="small">Đánh giá</a>
-
-            <button type="button" class="cta" onclick="location.href='#pricing'">Gói & giá</button>
-            <a href="#contact" class="small">Liên hệ</a>
+          <a href="#features" class="small">Tính năng</a>
+          <a href="#testimonials" class="small">Đánh giá</a>
+          <button type="button" class="cta" onclick="location.href='#pricing'">Gói &amp; giá</button>
+          <a href="#contact" class="small">Liên hệ</a>
         </div>
       </nav>
     </header>
 
-    <!-- Hero -->
+    <!-- Main -->
     <main>
-        <section class="hero" aria-labelledby="hero-heading">
-            <div class="hero-inner">
-                <div class="hero-left">
-                    <div class="eyebrow">Phần mềm hỗ trợ tạo hồ sơ, mẫu biểu</div>
-                    <h2 id="hero-heading">Tạo hồ sơ, mẫu biểu tự động nhanh chóng, dễ dàng</h2>
-                    <p class="lead">APC giúp bạn tạo, quản lý hồ sơ, mẫu biểu, dễ dàng chỉnh sửa, bảo mật và an toàn.</p>
-
-                    <div class="hero-ctas">
-                        <button type="button" class="cta" onclick="location.href='#changelogPro'">Tải về miễn phí</button>
-                        <button type="button" class="menu-btn" onclick="location.href='#features'">Tìm hiểu thêm</button>
-                    </div>
-                </div>
-                <aside class="hero-right card">
-                    <img src="images/banner2.png" loading="lazy" alt="APC picture" style="width:100%;border-radius:8px;margin-bottom:0.75rem;">
-                    <div class="small muted">Được xây dựng và phát triển từ 2013</div>
-                </aside>
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <div class="eyebrow">Phần mềm hỗ trợ tạo hồ sơ, mẫu biểu</div>
+            <h2 id="hero-heading">Tạo hồ sơ, mẫu biểu tự động nhanh chóng, dễ dàng</h2>
+            <p class="lead">APC giúp bạn tạo, quản lý hồ sơ, mẫu biểu, dễ dàng chỉnh sửa, bảo mật và an toàn.</p>
+            <div class="hero-ctas">
+              <button type="button" class="cta" onclick="location.href='#changelogPro'">Tải về miễn phí</button>
+              <button type="button" class="menu-btn" onclick="location.href='#features'">Tìm hiểu thêm</button>
             </div>
+          </div>
+          <aside class="hero-right card">
+            <img src="images/banner2.png" loading="lazy" alt="APC picture" style="width:100%;border-radius:8px;margin-bottom:0.75rem;">
+            <div class="small muted">Được xây dựng và phát triển từ 2013</div>
+          </aside>
+        </div>
 
-            <div class="features" id="features">
-                <div class="feature-grid">
-                    <article class="card"><h3>Tạo mẫu biểu siêu nhanh</h3><p class="muted small">Chọn nghiệp vụ, hồ sơ cần tạo, nhập thông tin và xuất ra file word.</p></article>
-                    <article class="card"><h3>Quản lý khách hàng, hồ sơ</h3><p class="muted small">Lưu dữ liệu khách hàng, hồ sơ, mẫu biểu đã tạo để tìm lại nhanh chóng.</p></article>
-                    <article class="card"><h3>Dễ dàng chỉnh sửa mẫu gốc</h3><p class="muted small">Chỉnh sửa mẫu biểu gốc, thêm các menu hồ sơ mới khi cần.</p></article>
-                </div>
-            </div>
-        </section>
+        <div class="features" id="features">
+          <div class="feature-grid">
+            <article class="card"><h3>Tạo mẫu biểu siêu nhanh</h3><p class="small">Chọn nghiệp vụ, hồ sơ cần tạo, nhập thông tin và xuất ra file word.</p></article>
+            <article class="card"><h3>Quản lý khách hàng, hồ sơ</h3><p class="small">Lưu dữ liệu khách hàng, hồ sơ, mẫu biểu đã tạo để tìm lại nhanh chóng.</p></article>
+            <article class="card"><h3>Dễ dàng chỉnh sửa mẫu gốc</h3><p class="small">Chỉnh sửa mẫu biểu gốc, thêm các menu hồ sơ mới khi cần.</p></article>
+          </div>
+        </div>
+      </section>
 
+      <!-- Meta row -->
+      <section class="meta-row mt-1">
+        <!-- Testimonials -->
+        <div class="card testimonial testimonial-narrow" id="testimonials">
+          <div class="icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path d="M7 8h10v8H7z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div>
+            <h3>Người dùng nói gì</h3>
+            <blockquote class="quote">"APC thay đổi cách tôi làm việc - tạo hồ sơ nhanh, dễ sửa mẫu biểu, đỡ đau đầu, để thời gian đó đi nhậu với bạn bè." - <strong>Đạt 1 lít - bank A</strong></blockquote>
+            <p class="small muted" style="margin-top:0.5rem">"APC luôn cập nhật mẫu biểu rất kịp thời, mà không kịp thì tự mình đưa mẫu vào cũng ok." - <strong>Linh đển - bank A</strong></p>
+            <p class="small muted" style="margin-top:0.5rem">"Tính năng sao lưu tự động giúp bảo vệ dữ liệu an toàn kể cả khi ổ cứng sắp tèo." - <strong>Hải Dớ - bank V</strong></p>
+          </div>
+        </div>
 
-        <!-- Meta row -->
-        <section class="meta-row mt-1">
-            <!-- Testimonials -->
-            <div class="card testimonial testimonial-narrow" id="testimonials">
-                <div class="icon-wrapper">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                        <path d="M7 8h10v8H7z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </div>
-                <div>
-                    <h3>Người dùng nói gì</h3>
-                    <blockquote class="quote">“APC thay đổi cách tôi làm việc - tạo hồ sơ nhanh, dễ sửa mẫu biểu, đỡ đau đầu, để thời gian đó đi nhậu với bạn bè.” - <strong>Đạt 1 lít - bank A</strong></blockquote>
-                    <p class="small muted" style="margin-top:0.5rem">“APC luôn cập nhật mẫu biểu rất kịp thời, mà không kịp thì tự mình đưa mẫu vào cũng ok.” - <strong>Linh đển - bank A</strong></p>
-                    <p class="small muted" style="margin-top:0.5rem">“Tính năng sao lưu tự động giúp bảo vệ dữ liệu an toàn kể cả khi ổ cứng sắp tèo.” - <strong>Hải Dớ - bank V</strong></p>
-                </div>
-            </div>
-            <!-- Pricing -->
-            <div class="pricing-container" aria-labelledby="pricing">
-                <div class="pricing-header"><h2 id="pricing">Gói & Giá</h2></div>
-                <p>
-                    Hướng dẫn kích hoạt sẽ tự động xuất hiện khi bạn sử dụng chương trình hoặc bạn có thể xem
-                    <a href="apc-activate.html" class="small"> Tại đây </a>
-                </p>
-                <div class="pricing-grid">
-                    <div class="plan"><h3>Dùng thử</h3><div class="price">Miễn phí</div><p class="small muted">Đầy đủ tính năng, dùng trong 15 ngày.</p></div>
-                    <div class="plan highlight"><h3>Bản quyền</h3><div class="price">120.000 đ/năm</div><p class="small muted">Đầy đủ tính năng, dùng cả năm.</p></div>
-                </div>
-            </div>
-        </section>
+        <!-- Pricing -->
+        <div class="pricing-container" aria-labelledby="pricing">
+          <div class="pricing-header"><h2 id="pricing">Gói &amp; Giá</h2></div>
+          <p>
+            Hướng dẫn kích hoạt sẽ tự động xuất hiện khi bạn sử dụng chương trình hoặc bạn có thể xem
+            <a href="apc-activate.html" class="small">Tại đây</a>
+          </p>
+          <div class="pricing-grid">
+            <div class="plan"><h3>Dùng thử</h3><div class="price">Miễn phí</div><p class="small muted">Đầy đủ tính năng, dùng trong 15 ngày.</p></div>
+            <div class="plan highlight"><h3>Bản quyền</h3><div class="price">120.000 đ/năm</div><p class="small muted">Đầy đủ tính năng, dùng cả năm.</p></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- APC Pro -->
-            <div class="card changelog" id="changelogPro">
-                <h3>APC Pro</h3>
-                <p>
-                    Phiên bản phù hợp cho sử dụng cá nhân
-                </p>
-                <p class="small muted">
+      <!-- APC Pro -->
+      <!-- Sửa: đổi class changelog → download-section -->
+      <div class="card download-section mt-1" id="changelogPro">
+        <h3>APC Pro</h3>
+        <p>Phiên bản phù hợp cho sử dụng cá nhân</p>
+        <p class="small muted">
+          a. Bản đầy đủ (APC Pro full 600) có mẫu biểu:&nbsp;
+          <a href="https://u.pcloud.link/publink/show?code=kZwDiz5ZJmeq47M9v28cHurgqFhnYHzG3K6y" target="_blank" rel="noopener noreferrer">Tải về</a><br />
+          b. File cập nhật Update_Pro_600:&nbsp;
+          <a href="https://u.pcloud.link/publink/show?code=kZNBiz5Zne2AjOm1gN5N1PK67QEz50SUd5K7" target="_blank" rel="noopener noreferrer">Tải về</a><br />
+          Chỉ cần tải một trong hai file trên tùy thuộc vào một trong hai trường hợp sau:<br />
+          - Nếu bạn CHƯA có bản APC Pro full (có mẫu biểu) thì hãy tải bản đầy đủ (mục a) về.<br />
+          - Nếu bạn đã CÓ bản APC Pro full (có mẫu biểu) rồi thì chỉ cần tải file cập nhật (mục b) về và cập nhật phiên bản theo hướng dẫn ở file kèm theo.<br />
+          <em>(Cập nhật phiên bản không làm thay đổi mẫu biểu đã có, và luôn bao gồm, tích lũy các chỉnh sửa, bổ sung tính năng từ các bản cập nhật trước đó)</em>
+        </p>
+      </div>
 
-                    a. Bản đầy đủ (APC Pro full 600) có mẫu biểu: &nbsp
-                    <a href="https://u.pcloud.link/publink/show?code=kZwDiz5ZJmeq47M9v28cHurgqFhnYHzG3K6y" target="_blank" rel="noopener noreferrer">Tải về</a> <br />
+      <!-- APC Enterprise -->
+      <div class="card download-section mt-1" id="changelogEnter">
+        <h3>APC Enterprise</h3>
+        <p>
+          Phiên bản phù hợp cho sử dụng doanh nghiệp&nbsp;
+          <a href="apc-compare.html" class="small">So sánh APC Pro và APC Enter</a>
+        </p>
+        <p class="small muted">
+          a. Bộ cài đặt APC Enterprise:&nbsp;
+          <a href="https://drive.google.com/drive/folders/1-SIfv68O7ZQCJB97AotUmo95YbXCWj75?usp=drive_link" target="_blank" rel="noopener noreferrer">Tải về</a><br />
+          b. File cập nhật phiên bản Update_Enter_3.3.0.0:&nbsp;
+          <a href="https://u.pcloud.link/publink/show?code=kZ54Om5Zle2bNT0FG2R2SEO8CrQ0IVLjlCx7" target="_blank" rel="noopener noreferrer">Tải về</a><br />
+          <em>(Cập nhật phiên bản không làm thay đổi mẫu biểu đã có, và luôn bao gồm, tích lũy các chỉnh sửa, bổ sung tính năng từ các bản cập nhật trước đó)</em>
+        </p>
+      </div>
 
-                    b. File cập nhật Update_Pro_600: &nbsp
-                    <a href="https://u.pcloud.link/publink/show?code=kZNBiz5Zne2AjOm1gN5N1PK67QEz50SUd5K7" target="_blank" rel="noopener noreferrer">Tải về</a> &nbsp <br />
-                    <!--<a href="pro/600/pro600.html" class="small"> Chi tiết thay đổi</a><br />-->
-
-                    Chỉ cần tải một trong hai file trên tùy thuộc vào một trong hai trường hợp sau:<br />
-                    - Nếu bạn CHƯA có bản APC Pro full (có mẫu biểu) thì hãy tải bản đầy đủ (mục a) về. <br />
-                    - Nếu bạn đã CÓ bản APC Pro full (có mẫu biểu) rồi thì chỉ cần tải file cập nhật (mục b) về và cập nhật phiên bản theo hướng dẫn ở file kèm theo.<br />
-                    <em>(Cập nhật phiên bản không làm thay đổi mẫu biểu đã có, và luôn bao gồm, tích lũy các chỉnh sửa, bổ sung tính năng từ các bản cập nhật trước đó)</em>
-                </p>
-
-            </div>
-            <!-- APC Enter  -->
-            <div class="card changelog" id="changelogEnter">
-                <h3>APC Enterprise</h3>
-                <p>
-                    Phiên bản phù hợp cho sử dụng doanh nghiệp &nbsp
-                    <a href="apc-compare.html" class="small"> So sánh APC Pro và APC Enter </a>
-                </p>
-                <p class="small muted">
-                    a. Bộ cài đặt APC Enterprise: &nbsp
-                    <a href="https://drive.google.com/drive/folders/1-SIfv68O7ZQCJB97AotUmo95YbXCWj75?usp=drive_link" target="_blank" rel="noopener noreferrer">Tải về</a><br />
-                    b. File cập nhật phiên bản Update_Enter_3.3.0.0: &nbsp
-                    <a href="https://u.pcloud.link/publink/show?code=kZ54Om5Zle2bNT0FG2R2SEO8CrQ0IVLjlCx7" target="_blank" rel="noopener noreferrer">Tải về</a> &nbsp <br />
-                    <!--<a href="enter/3220/enter3220.html" class="small"> Chi tiết thay đổi</a><br />-->
-                    <em>(Cập nhật phiên bản không làm thay đổi mẫu biểu đã có, và luôn bao gồm, tích lũy các chỉnh sửa, bổ sung tính năng từ các bản cập nhật trước đó)</em>
-
-                </p>
-            </div>
-
-        <!-- Trợ giúp -->
-        <section id="help" class="help">
-            <h2>Trợ giúp</h2>
-            <p>
-                Hướng dẫn cập nhật mẫu biểu APC: &nbsp
-                <a href="cnmb.html" class="small"> Truy cập </a> <br />
-                Hướng dẫn sửa lỗi và các hỗ trợ khác: &nbsp
-                <a href="support/support-index.html" class="small">Truy cập </a> <br />
-            </p>
-        </section>
-
-
-
-        <!-- Footer -->
-        <footer id="contact" class="footer">
-            <h2>Thông tin liên hệ</h2>
-            <p class="small muted">
-                Trang Fanpage:
-                <a href="https://www.facebook.com/apcsoft/" target="_blank" rel="noopener noreferrer">Truy cập</a><br />
-                Nhóm facebook hỗ trợ người dùng cập nhật mẫu biểu (Agribank):
-                <a href="https://www.facebook.com/share/g/15NmCar6Nq/?mibextid=wwXIfr" target="_blank" rel="noreferrer">Truy cập</a><br />
-                Kênh Youtube:
-                <a href="https://youtube.com/@apcsoft?si=FcOPn54RN51kK1ez" target="_blank" rel="noreferrer">Truy cập</a><br />
-            </p>
-            <div style="margin-top:0.75rem" class="small muted">© <span id="yr"></span> APC. All rights reserved by Hoàng Thạch APC Soft.</div>
-        </footer>
+      <!-- Trợ giúp -->
+      <section id="help" class="help">
+        <h2>Trợ giúp</h2>
+        <p>
+          Hướng dẫn cập nhật mẫu biểu APC:
+          <a href="cnmb.html" class="small">Truy cập</a>
+        </p>
+        <p>
+          Hướng dẫn sửa lỗi và các hỗ trợ khác:
+          <a href="support/support-index.html" class="small">Truy cập</a>
+        </p>
+      </section>
     </main>
+
+    <!-- Sửa: <footer> ra ngoài <main> -->
+    <footer id="contact" class="footer">
+      <h2>Thông tin liên hệ</h2>
+      <p class="small muted">
+        Trang Fanpage:
+        <a href="https://www.facebook.com/apcsoft/" target="_blank" rel="noopener noreferrer">Truy cập</a><br />
+        Nhóm facebook hỗ trợ người dùng cập nhật mẫu biểu (Agribank):
+        <a href="https://www.facebook.com/share/g/15NmCar6Nq/?mibextid=wwXIfr" target="_blank" rel="noreferrer">Truy cập</a><br />
+        Kênh Youtube:
+        <a href="https://youtube.com/@apcsoft?si=FcOPn54RN51kK1ez" target="_blank" rel="noreferrer">Truy cập</a><br />
+      </p>
+      <div style="margin-top:0.75rem" class="small muted">© <span id="yr"></span> APC. All rights reserved by Hoàng Thạch APC Soft.</div>
+    </footer>
   </div>
 
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
+
     const btn = document.getElementById('menuToggle');
     const nav = document.getElementById('primaryNav');
-    btn.addEventListener('click', ()=>{
+
+    // syncNav() để khởi tạo trạng thái đúng khi load trang
+    function syncNav() {
+      if (window.innerWidth >= 641) {
+        nav.style.display = 'flex';
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        nav.style.display = 'none';
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    syncNav();
+
+    btn.addEventListener('click', () => {
       const open = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!open));
       nav.style.display = open ? 'none' : 'flex';
     });
-    window.addEventListener('resize', ()=>{
-      if(window.innerWidth >= 641){nav.style.display='flex';btn.setAttribute('aria-expanded','false');}
-      else{nav.style.display='none';}
-    });
+
+    window.addEventListener('resize', syncNav);
   </script>
 </body>
 </html>

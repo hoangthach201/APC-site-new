@@ -17,14 +17,8 @@
             --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
-        }
-
+        * { box-sizing: border-box; }
+        html, body { height: 100%; }
         body {
             margin: 0;
             font-family: var(--font-sans);
@@ -36,10 +30,7 @@
             justify-content: center;
         }
 
-        .container {
-            width: 100%;
-            max-width: var(--max-width);
-        }
+        .container { width: 100%; max-width: var(--max-width); }
 
         header {
             display: flex;
@@ -49,150 +40,70 @@
             padding: 0.5rem;
         }
 
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-            color: inherit;
-        }
-
+        .brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: inherit; }
         .logo {
-            width: 40px;
-            height: 40px;
-            display: inline-grid;
-            place-items: center;
+            width: 40px; height: 40px; display: inline-grid; place-items: center;
             background: linear-gradient(135deg, var(--accent), #7c3aed);
             border-radius: 10px;
         }
 
-        nav {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .nav-links {
-            display: none;
-            gap: 1rem;
-            align-items: center;
-        }
+        nav { display: flex; gap: 1rem; align-items: center; }
+        .nav-links { display: none; gap: 1rem; align-items: center; }
 
         .cta {
-            background: var(--accent);
-            color: #042027;
-            border: none;
-            padding: 0.5rem 0.9rem;
-            border-radius: 10px;
-            font-weight: 600;
-            cursor: pointer;
+            background: var(--accent); color: #042027; border: none;
+            padding: 0.5rem 0.9rem; border-radius: 10px; font-weight: 600; cursor: pointer;
         }
 
         .menu-btn {
-            background: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            padding: 0.4rem;
-            border-radius: 8px;
-            display: inline-grid;
-            place-items: center;
-            cursor: pointer;
+            background: transparent; border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 0.4rem; border-radius: 8px; display: inline-grid; place-items: center; cursor: pointer;
         }
 
-        main {
-            margin-top: 1rem;
-        }
+        main { margin-top: 1rem; }
 
         .card {
-            background: var(--card);
-            padding: 1.5rem;
-            border-radius: 10px;
+            background: var(--card); padding: 1.5rem; border-radius: 10px;
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
         }
 
-        /* Sửa thứ bậc heading */
-        .brand h2 {
-            font-size: 1rem;
-            margin: 0;
-        }
+        .brand h2 { font-size: 1rem; margin: 0; }
 
         .card-title {
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-            margin: 0 0 1.25rem 0;
+            font-size: 1.6rem; font-weight: 700;
+            letter-spacing: -0.01em; margin: 0 0 1.25rem 0;
         }
 
         .section-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #e6eef6;
-            margin: 1.25rem 0 0.5rem 0;
+            font-size: 1rem; font-weight: 600;
+            color: #e6eef6; margin: 1.25rem 0 0.5rem 0;
         }
 
-        p {
-            margin: 0.5rem 0;
-            color: #e6eef6;
-        }
+        p { margin: 0.5rem 0; color: #e6eef6; }
+        .muted { color: var(--muted); }
 
-        /* Sửa: thêm class .muted còn thiếu */
-        .muted {
-            color: var(--muted);
-        }
-
-        ul {
-            margin: 0.25rem 0 1rem 1.25rem;
-            color: #e6eef6;
-            padding-left: 1rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
+        ul { margin: 0.25rem 0 1rem 1.25rem; color: #e6eef6; padding-left: 1rem; }
+        li { margin-bottom: 0.5rem; }
 
         footer {
-            margin-top: 1rem;
-            padding: 1rem;
-            border-radius: var(--radius);
+            margin-top: 1rem; padding: 1rem; border-radius: var(--radius);
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
         }
 
-        .footer-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin: 0 0 0.5rem 0;
-        }
+        .footer-title { font-size: 1.4rem; font-weight: 700; margin: 0 0 0.5rem 0; }
 
         @media (min-width: 641px) {
-            .nav-links {
-                display: flex;
-            }
-
-            .menu-btn {
-                display: none;
-            }
+            .nav-links { display: flex; }
+            .menu-btn { display: none; }
         }
 
-        a {
-            color: #0ea5ff;
-            text-decoration: none;
-            font-weight: 500;
-        }
+        a { color: #0ea5ff; text-decoration: none; font-weight: 500; }
+        a:hover { color: #38bdf8; text-decoration: underline; }
+        .a-white { color: #e6eef6; font-weight: normal; }
+        .a-white:hover { color: #ffffff; }
 
-        a:hover {
-            color: #38bdf8;
-            text-decoration: underline;
-        }
-
-        .small {
-            font-size: 0.85rem;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: var(--radius);
-            margin: 1rem 0;
-        }
+        .small { font-size: 0.85rem; }
+        img { max-width: 100%; height: auto; border-radius: var(--radius); margin: 1rem 0; }
     </style>
 </head>
 <body>
@@ -206,7 +117,6 @@
                     </svg>
                 </div>
                 <div>
-                    <!-- Sửa: dùng h2 cho brand -->
                     <h2>APC</h2>
                     <div class="small muted">Tạo hồ sơ tự động &amp; nhanh chóng</div>
                 </div>
@@ -226,40 +136,30 @@
 
         <main>
             <section class="card">
-                <!-- Sửa: h1 cho tiêu đề chính -->
                 <h1 class="card-title">Hướng dẫn sửa lỗi và các hỗ trợ khác</h1>
 
-                <!-- Sửa: h3 cho tiêu đề các mục, dùng <ul><li> thay vì dấu "-" + <br /> -->
                 <h3 class="section-title">* Hỗ trợ về APC Pro</h3>
                 <ul>
-                    <li>
-                        Hướng dẫn cập nhật phiên bản APC Pro:
-                        <a href="../pro/hdUpdate/hdUpatePro.html" class="small">Truy cập</a>
+                    <li>                        
+                        <a href="../pro/hdUpdate/hdUpatePro.html" class="a-white">Hướng dẫn cập nhật phiên bản APC Pro</a>
                     </li>
-
+                    <li><a href="blockDll/blockDll.html" class="a-white">Hướng dẫn sửa lỗi block thư viện dll</a></li>
                     <li>
-                        Hướng dẫn sửa lỗi block thư viện dll:
-                        <a href="blockDll/blockDll.html" class="small">Truy cập</a>
-                    </li>
-                    <li>
-                        Hướng dẫn copy APC từ máy tính này sang máy tính khác:
-                        <a href="../pro/copyAPC/copyAPC.html" class="small">Truy cập</a>
+                        <a href="../pro/copyAPC/copyAPC.html" class="a-white">Hướng dẫn copy APC từ máy tính này sang máy tính khác</a>
                     </li>
                 </ul>
 
                 <h3 class="section-title">* Hỗ trợ về APC Enter</h3>
                 <ul>
-                    <li>
-                        Hướng dẫn sửa lỗi block thư viện dll:
-                        <a href="blockDll/blockDll.html" class="small">Truy cập</a>
+                    <li>                       
+                        <a href="blockDll/blockDll.html" class="a-white">Hướng dẫn sửa lỗi block thư viện dll</a>
                     </li>
                 </ul>
 
                 <h3 class="section-title">* Hỗ trợ chung</h3>
                 <ul>
-                    <li>
-                        Hướng dẫn xuất, nhập nhóm hồ sơ từ bản APC này sang bản APC khác:
-                        <a href="xuatNhapForm/xuatNhapForm.html" class="small">Truy cập</a>
+                    <li>                        
+                        <a href="xuatNhapForm/xuatNhapForm.html" class="a-white">Hướng dẫn xuất, nhập nhóm hồ sơ từ bản APC này sang bản APC khác</a>
                     </li>
                 </ul>
             </section>
@@ -281,11 +181,9 @@
 
     <script>
         document.getElementById('yr').textContent = new Date().getFullYear();
-
         const btn = document.getElementById('menuToggle');
         const nav = document.getElementById('primaryNav');
 
-        // Sửa: thêm syncNav() để khởi tạo trạng thái đúng khi load trang
         function syncNav() {
             if (window.innerWidth >= 641) {
                 nav.style.display = 'flex';
